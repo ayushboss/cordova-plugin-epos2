@@ -8,6 +8,7 @@ var epos2 = {
     exec(successCallback, errorCallback, PLUGIN_NAME, 'startDiscover', []);
   },
   stopDiscover: function(successCallback, errorCallback) {
+    console.log("plugin.js, stopDiscover")
     exec(successCallback, errorCallback, PLUGIN_NAME, 'stopDiscover', []);
   },
   connectPrinter: function(ipAddress, successCallback, errorCallback) {
