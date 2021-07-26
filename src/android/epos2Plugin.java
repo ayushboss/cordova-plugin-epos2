@@ -51,6 +51,7 @@ public class epos2Plugin extends CordovaPlugin {
     }
 
     private void startDiscovery(final CallbackContext callbackContext) {
+        Log.d("WOAH", "SOMETHINGS HAPPENING");
         FilterOption mFilterOption = new FilterOption();
         mFilterOption.setDeviceType(Discovery.TYPE_PRINTER);
         mFilterOption.setEpsonFilter(Discovery.FILTER_NAME);
@@ -63,6 +64,7 @@ public class epos2Plugin extends CordovaPlugin {
     }
 
     private void stopDiscovery(final CallbackContext callbackContext) {
+        Log.d("WOAH", "SOMETHINGS STOPPING");
         while (true) {
             try {
                 Discovery.stop();
